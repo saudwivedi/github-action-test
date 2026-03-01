@@ -1,11 +1,12 @@
 name: Hello
-on: 
+
+on:
   push:
-   branch: [main]
+    branches: [main]
+
 jobs:
- sayhello:
-   runs-on: ubuntu-latest
-   steps:
-    -name: "say hello"
-     run: echo "hello 1"
-   
+  sayhello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "say hello"
+        run: echo "hello 1"
