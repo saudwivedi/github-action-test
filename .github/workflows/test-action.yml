@@ -1,0 +1,11 @@
+name: Hello
+on: 
+  push:
+   branch: [main]
+jobs:
+ sayhello:
+   runs-on: ubuntu-latest
+   steps:
+    -name: "say hello"
+     step: echo "hello 1"
+   
